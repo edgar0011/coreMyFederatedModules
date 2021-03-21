@@ -10,3 +10,4 @@ npm-debug.log
 .DS_Store
 .yalc
 yalc.lock
+yarn-error.log
