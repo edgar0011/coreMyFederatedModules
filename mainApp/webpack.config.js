@@ -2,7 +2,7 @@
 const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+// const CopyPlugin = require('copy-webpack-plugin')
 const { ModuleFederationPlugin } = require('webpack').container
 
 module.exports = {
@@ -25,6 +25,11 @@ module.exports = {
     ],
   },
   plugins: [
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: './shared-app-built', to: './lib' },
+    //   ],
+    // }),
     new ModuleFederationPlugin({
       name: 'app1',
       library: { type: 'var', name: 'app1' },
