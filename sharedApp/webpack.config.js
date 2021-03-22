@@ -78,6 +78,7 @@ module.exports = {
       exposes: {
         // expose each component you want
         './AtomComponent': './src/components/AtomComponent',
+        './CallOut': './src/components/CallOut',
       },
       // shared: ['react', 'react-dom'],
     }),
