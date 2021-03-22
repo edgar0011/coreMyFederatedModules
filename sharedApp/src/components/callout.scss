@@ -16,12 +16,26 @@
   p {
     margin: 1rem 0 0 0;
   }
+
+  form {
+    padding: 0.2rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      display: flex;
+      input {
+        margin-left: 0.5rem;
+      }
+    }
+  }
 }
 
 .callout-content {
 
   will-change: opacity, transform;
-
+  pointer-events: all;
 }
 
 .callout-content:hover {
@@ -38,6 +52,7 @@
   opacity: 0;
   box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.3);
   transition: opacity 450ms ease;
+  pointer-events: none;
 };
 
 .callout-content:hover::after {
