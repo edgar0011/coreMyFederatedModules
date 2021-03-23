@@ -6,8 +6,11 @@ const app = new AtomComponent()
 app.render()
 
 
-CallOut.render({ id: 'callout', title: 'Call Out', text: 'dsdsds dsadd ada sadsa sadsa dsdsad asdsa dsd sdsad sdsa' })
+const callOutElement = CallOut.render({ id: 'callout', title: 'Call Out', text: 'dsdsds dsadd ada sadsa sadsa dsdsad asdsa dsd sdsad sdsa' })
 
+
+console.log('callOutElement')
+console.log(callOutElement)
 
 const formElement = document.getElementById('myForm')
 

@@ -66,6 +66,7 @@ class AtomComponent {
       this.element.innerText = title
     }
     document.getElementById(id).appendChild(this.element)
+    return this.element
   }
 
   mount() {
