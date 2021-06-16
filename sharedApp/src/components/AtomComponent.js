@@ -1,7 +1,7 @@
 
 
 class AtomComponent {
-  static applyStyles(element, styles) {
+  static applyStyles(element: HTMLElement, styles: Record<string, unknown>): void {
     Object.keys(styles).forEach((key) => {
       // eslint-disable-next-line no-param-reassign
       element.style[key] = styles[key]
@@ -9,18 +9,18 @@ class AtomComponent {
     return element.style
   }
 
-  static applyClass(element, className) {
+  static applyClass(element: HTMLElement, className: string): void {
     // eslint-disable-next-line no-param-reassign
     element.className = className
   }
 
-  static addClass(element, className) {
+  static addClass(element: HTMLElement, className: string): void {
     if (!element.contains(className)) {
       element.classList.add(className)
     }
   }
 
-  static removeClass(element, className) {
+  static removeClass(element: HTMLElement, className: string): void {
     if (element.contains(className)) {
       element.classList.remove(className)
     }

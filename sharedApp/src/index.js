@@ -6,7 +6,8 @@ const app = new AtomComponent()
 app.render()
 
 
-const callOutElement = CallOut.render({ id: 'callout', title: 'Call Out', text: 'dsdsds dsadd ada sadsa sadsa dsdsad asdsa dsd sdsad sdsa' })
+const callOutElement = CallOut.render({
+  id: 'callout', title: 'Call Out', text: 'dsdsds dsadd ada sadsa sadsa dsdsad asdsa dsd sdsad sdsa' })
 
 
 console.log('callOutElement')

@@ -15,7 +15,11 @@ const make = async () => {
   console.log(CallOutModule)
   console.log(CallOut)
 
-  CallOut.render({ id: 'callOut', title: 'Call Out', text: 'dsdsds dsadd ada sadsa sadsa dsdsad asdsa dsd sdsad sdsa' })
+  CallOut.render({
+    id: 'callOut',
+    title: 'Call Out',
+    text: 'Call Out from shared dsdsds dsadd ada sadsa sadsa dsdsad asdsa dsd sdsad sdsa',
+  })
 
   app.render({ ...app.defaultProps, title: 'Hello From Main App' })
 }
