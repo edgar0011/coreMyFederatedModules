@@ -19,10 +19,13 @@ module.exports = {
   output: {
     publicPath: 'http://localhost:3001/',
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
+  },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
